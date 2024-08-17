@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Namste React</title>
+</head>
+<body>
+    <!-- <h1>Namste World!</h1> -->
+     <div id="root">
+Not Rendered...
+     </div>
+     <!-- <script>
+        const head = document.createElement('h1');
+        head.textContent = 'Namaste World!!';
+    const root =    document.getElementById('root');
+    root.appendChild(head);
+     </script> -->
+ 
+     <script 
+     crossorigin 
+     src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script 
+    crossorigin 
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script >
+    const heading1 = React.createElement('h1',{id:"title"},'Namate Everyone!!')
+    const heading2 = React.createElement('h1',{id:"title2"},'heading 2')
+    const div1 = React.createElement('div',{id:"container"},[heading1,heading2])
+    const root = ReactDOM.createRoot(document.getElementById('root'))
+    // passing the react element inside the root
+    root.render(div1)
+</script>
+</body>
+</html>
